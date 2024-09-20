@@ -1,0 +1,22 @@
+openapi: 3.0.2
+info:
+  title: HTTP-URL
+  description: Generic collaboration resource that can be accessed via a URL using HTTP enabled application. Must only be used if there is not a more appropriate resource type that can be used. 
+  contact:
+    name: NENA
+    email: commleadership@nena.org
+  version: '1.0.0'
+components:
+  schemas:
+    URL:
+      title: HTTP-URL
+      type: object
+      required:
+        - url
+      properties:
+        url:
+          type: string
+          description: The URL value for a generic collaboration resource.
+        notes:
+          type: string
+          description: Any notes associated with the generic collaboration resource.
