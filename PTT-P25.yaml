@@ -16,6 +16,7 @@ components:
         - WACN
         - systemId
         - groupMode
+        - resourceId
       properties:
         mode:
           enum:
@@ -29,6 +30,9 @@ components:
         channelId:
           type: string
           description: The P25 talkgroup ID for the talkpath or the channel identifier, if available. May be in hex or decimal format.
+        resourceId:
+          type: string
+          description: The unique resource identifier of this shared communication resource within the originating system.
         channelUplinkFrequency:
           type: string
           description: The uplink frequency for the talkpath, if operating in direct or conventional mode.
